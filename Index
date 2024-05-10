@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NotesMafia</title>
+        <style>
+            body {
+                background-color: rgb(166, 0, 0);
+            }
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                background-color: #7d0000;
+                border: none;
+                border-radius: 20px;
+            }
+            li a:hover {
+            background-color: #b90000;
+            color: rgb(255, 255, 255);
+            }
+            img {
+                align-content: center;
+            }
+            h1 {
+                font-size: 65px;
+            }
+            a {
+                color: black;
+            }
+        </style>
+    </head>
+    <h1>NotesMafia</h1>
+    <ul>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+    </ul>
+    <h2>Blog</h2>
+    <h3>NotesMafia now accepting contributions!</h3>
+    <img src="Photos/thiswasreallyannoying.jpeg" width="500">
+    <p>Just head to the <a href="contribute.html">contributions page</a> to add your notes to this page!</p>
+</html>
