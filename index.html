@@ -31,6 +31,8 @@
             }
             img {
                 align-content: center;
+                border-radius: 20px;
+                margin-left: 15px;
             }
             h1 {
                 font-size: 65px;
@@ -48,6 +50,35 @@
                 background-color: rgb(34, 114, 243);
                 color: rgb(255, 255, 255);
             }
+            article {
+                background-color: #de0101;
+                border-radius: 20px;
+                margin: 15px;
+            }
+            #arttitle {
+                margin: 15px;
+            }
+            #artbody {
+                margin: 15px;
+            }
+            section {
+                background-color: #b80303;
+                border-radius: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #secttitle {
+                margin: 15px;
+            }
+            #arttitle a {
+                text-decoration: none;
+            }
+            #arttitle a:hover {
+                text-decoration: underline;
+            }
+            #sectend {
+                margin: 15px;
+            }
         </style>
     </head>
     <h1>NotesMafia</h1>
@@ -56,13 +87,20 @@
         <li><a href="contribute.html">Contribute</a></li>
         <li><a id="Special"  href="https://qtechinnovation.github.io/TextbookSpace/">TextbookSpace</a></li>
     </ul>
-    <h2>Blog</h2>
-    <h3>TextbookSpace is here!</h3>
+    <section>
+    <h2 id="secttitle">Blog</h2>
+    <article>
+    <h3 id="arttitle"><a href="textbooks.html">TextbookSpace is here!</a></h3>
     <img src="Photos/D68AEBF0-20F6-47D3-BF77-068C586B2369_1_201_a.jpeg" width="500">
-    <p>TextbookSpace is your one-stop shop for all textbook PDF needs! <a href="textbooks.html">Read More</a></p><br>
-    <h3>NotesMafia now accepting contributions!</h3>
+    <p id="artbody"> TextbookSpace is your one-stop shop for all textbook PDF needs!</p>
+    </article><br>
+    <article>
+    <h3 id="arttitle">NotesMafia now accepting contributions!</h3>
     <img src="Photos/thiswasreallyannoying.jpeg" width="500">
-    <p>Just head to the <a href="contribute.html">contributions page</a> to add your notes to this page!</p><br>
+    <p id="artbody">Just head to the <a href="contribute.html">contributions page</a> to add your notes to this page!</p>
+    </article>
+    <p id="sectend">It looks like you've reached the end. Goodbye, for now.</p>
+    </section><br>
     <footer>
         <p>Copyright (c) Qtechinnovation licensed under the MIT License</p>
         <p><a href="https://github.com/Qtechinnovation/NotesMafia?tab=readme-ov-file">Github</a> <a href="https://github.com/Qtechinnovation/NotesMafia/blob/main/LICENSE">License</a></p>
