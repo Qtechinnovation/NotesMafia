@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NotesMafia</title>
         <style>
             body {
                 background-color: rgb(166, 0, 0);
             }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 65px;
+                margin: 0;
+            }
             ul {
                 list-style-type: none;
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                display: flex; /* Change to flex for inline display */
+                margin-bottom: 10px;
             }
             li {
-                float: left;
+                margin: 0 10px;
             }
             li a {
                 display: block;
@@ -22,7 +35,6 @@
                 padding: 14px 16px;
                 text-decoration: none;
                 background-color: #7d0000;
-                border: none;
                 border-radius: 20px;
             }
             li a:hover {
@@ -33,9 +45,7 @@
                 align-content: center;
                 border-radius: 20px;
                 margin-left: 15px;
-            }
-            h1 {
-                font-size: 65px;
+                width: 70%;
             }
             a {
                 color: black;
@@ -54,6 +64,8 @@
                 background-color: #de0101;
                 border-radius: 20px;
                 margin: 15px;
+                display: flexbox;
+                padding: 5px;
             }
             #arttitle {
                 margin: 15px;
@@ -66,6 +78,7 @@
                 border-radius: 20px;
                 margin-left: 10px;
                 margin-right: 10px;
+                padding: 5px;
             }
             #secttitle {
                 margin: 15px;
@@ -79,10 +92,15 @@
             #sectend {
                 margin: 15px;
             }
+            @media screen and (min-width: 1000px) {
+                img {
+                    width: 500px;
+                }   
+            }
         </style>
         <link rel="icon" href="Photos/icon.png" type="image/x-icon">
     </head>
-    <h1>NotesMafia</h1>
+    <h1 class="header">NotesMafia</h1>
     <ul>
         <li><a href="notes.html">Notes</a></li>
         <li><a href="contribute.html">Contribute</a></li>
@@ -91,18 +109,23 @@
     <section>
         <h2 id="secttitle">Blog</h2>
         <article>
+            <h3 id="arttitle"><a href="newlook.html">NotesMafia has a new look!</a></h3>
+            <img src="Photos/thiswasreallyannoying.jpeg"> <!--placeholder image-->
+            <p id="artbody">Now NotesMafia is more smartphone friendly than ever!</p>
+        </article>
+        <article>
             <h3 id="arttitle"><a href="helpwanted1.html">Help Wanted</a></h3>
-            <img src="Photos/1F052784-2212-401D-900D-1B6F1C74737C_1_201_a.jpeg" width="500">
+            <img src="Photos/1F052784-2212-401D-900D-1B6F1C74737C_1_201_a.jpeg">
             <p id="artbody">A bounty has been placed...</p>
         </article>
         <article>
             <h3 id="arttitle"><a href="textbooks.html">TextbookSpace is here!</a></h3>
-            <img src="Photos/D68AEBF0-20F6-47D3-BF77-068C586B2369_1_201_a.jpeg" width="500">
+            <img src="Photos/D68AEBF0-20F6-47D3-BF77-068C586B2369_1_201_a.jpeg">
             <p id="artbody"> TextbookSpace is your one-stop shop for all textbook PDF needs!</p>
         </article>
         <article>
             <h3 id="arttitle">NotesMafia now accepting contributions!</h3>
-            <img src="Photos/thiswasreallyannoying.jpeg" width="500">
+            <img src="Photos/thiswasreallyannoying.jpeg">
             <p id="artbody">Just head to the <a href="contribute.html">contributions page</a> to add your notes to this page!</p>
         </article>
         <p id="sectend">It looks like you've reached the end. Goodbye, for now.</p>

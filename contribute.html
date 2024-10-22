@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contribute to NotesMafia</title>
         <style>
             body {
                 background-color: rgb(166, 0, 0);
             }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 65px;
+                margin: 0;
+            }
             ul {
                 list-style-type: none;
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                display: flex; /* Change to flex for inline display */
             }
             li {
-                float: left;
+                margin: 0 10px;
             }
             li a {
                 display: block;
@@ -22,13 +33,12 @@
                 padding: 14px 16px;
                 text-decoration: none;
                 background-color: #7d0000;
-                border: none;
                 border-radius: 20px;
             }
             li a:hover {
-            background-color: #b90000;
-            color: rgb(255, 255, 255);
-            }  
+                background-color: #b90000;
+                color: rgb(255, 255, 255);
+            }
             a {
                 color: black;
             }  
@@ -45,7 +55,7 @@
         </style>
         <link rel="icon" href="Photos/icon.png" type="image/x-icon">
     </head>
-    <h1>Contribute to NotesMafia</h1>
+    <h1 class="header">Contribute to NotesMafia</h1>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="notes.html">Notes</a></li>
