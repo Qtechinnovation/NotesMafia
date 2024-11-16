@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NotesMafia</title>
+        <title>Where We Stand</title>
         <style>
             body {
                 background-color: rgb(166, 0, 0);
@@ -16,7 +15,7 @@
                 padding: 20px;
             }
             h1 {
-                font-size: 65px;
+                font-size: 2.5em;
                 margin: 0;
             }
             ul {
@@ -25,7 +24,6 @@
                 padding: 0;
                 display: flex; /* Change to flex for inline display */
                 flex-wrap: wrap;
-                margin-bottom: 10px;
             }
             li {
                 margin: 0 10px;
@@ -48,19 +46,13 @@
                 border-radius: 20px;
                 margin-left: 15px;
                 width: 70%;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 65px;
             }
             a {
                 color: black;
-            }
-            footer {
-                font-size: small;
-            }
-            #Special {
-                background-color: rgb(22, 89, 196);
-            }
-            #Special:hover {
-                background-color: rgb(34, 114, 243);
-                color: rgb(255, 255, 255);
             }
             article {
                 background-color: #de0101;
@@ -94,12 +86,30 @@
             #sectend {
                 margin: 15px;
             }
+            #Special {
+                background-color: rgb(22, 89, 196);
+            }
+            #Special:hover {
+                background-color: rgb(34, 114, 243);
+                color: rgb(255, 255, 255);
+            }
+            footer {
+                font-size: small;
+            }
             @media screen and (min-width: 1000px) {
                 img {
                     width: 500px;
                 }   
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (min-width: 600px) {
+                ul {
+                    max-width: 80%; /* Change to 80% or any desired width */
+                    margin-bottom: 10px;
+                }
+                li {
+                    margin-bottom: 10px;
+                    padding-bottom: ;
+                }
                 h1 {
                     font-size: 40px;
                 }
@@ -107,41 +117,28 @@
         </style>
         <link rel="icon" href="Photos/icon.png" type="image/x-icon">
     </head>
-    <h1 class="header">NotesMafia</h1>
-    <ul>
-        <li><a href="notes.html">Notes</a></li>
-        <li><a href="contribute.html">Contribute</a></li>
-        <li><a id="Special"  href="https://qtechinnovation.github.io/TextbookSpace/">TextbookSpace</a></li>
-    </ul>
-    <section>
-        <h2 id="secttitle">Blog</h2>
-        <article>
-            <h3 id="arttitle"><a href="grantrevolution.html">Where We Stand</a></h3>
-            <img src="Photos/grantrevolution.png"> 
-            <p id="artbody">We need to talk.</p>
-        </article>
-        <article>
-            <h3 id="arttitle"><a href="newlook.html">NotesMafia has a new look!</a></h3>
-            <img src="Photos/thiswasreallyannoying.jpeg"> <!--placeholder image-->
-            <p id="artbody">Now NotesMafia is more smartphone friendly than ever!</p>
-        </article>
-        <article>
-            <h3 id="arttitle"><a href="helpwanted1.html">Help Wanted</a></h3>
-            <img src="Photos/1F052784-2212-401D-900D-1B6F1C74737C_1_201_a.jpeg">
-            <p id="artbody">A bounty has been placed...</p>
-        </article>
-        <article>
-            <h3 id="arttitle"><a href="textbooks.html">TextbookSpace is here!</a></h3>
-            <img src="Photos/D68AEBF0-20F6-47D3-BF77-068C586B2369_1_201_a.jpeg">
-            <p id="artbody"> TextbookSpace is your one-stop shop for all textbook PDF needs!</p>
-        </article>
-        <article>
-            <h3 id="arttitle">NotesMafia now accepting contributions!</h3>
-            <img src="Photos/thiswasreallyannoying.jpeg">
-            <p id="artbody">Just head to the <a href="contribute.html">contributions page</a> to add your notes to this page!</p>
-        </article>
-        <p id="sectend">It looks like you've reached the end. Goodbye, for now.</p>
-    </section><br>
+    <body>
+        <h1 class="header">Blog</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+            <li><a id="Special"  href="https://qtechinnovation.github.io/TextbookSpace/">TextbookSpace</a></li>
+        </ul>
+        <h2>Where We Stand</h2>
+        <img src="Photos/grantrevolution.png">
+        <section>
+            <h3 id="secttitle">We've been getting some questions from our users, and we feel it is important to adress some recent events.</h3>
+            <article>
+                <h3 id="arttitle">Our morals</h3>
+                <p id="artbody">Here at NotesMafia, we have a very imporatnt value. Second chances. That is why we believe, and have always believed that the red/green status days should happen faster, and more often. Because one day of failing grades should not put students on red for a whole week, especially when those grades are passing the very next day.</p>
+            </article>
+            <article>
+                <h3 id="arttitle">Our Support</h3>
+                <p id="artbody">After the recent events, a few people wished to know the views of the NotesMafia team regarding this subject. As to not let false information about who we support spread, we at NotesMafia have decided to endorse the #greenforgrant movement.</p>
+            </article>
+            <p id="sectend"><strong>Sincerely, NotesMafia Team.</strong></p>
+        </section>
     <footer>
         <p>Copyright (c) Qtechinnovation licensed under the MIT License</p>
         <p><a href="https://github.com/Qtechinnovation/NotesMafia?tab=readme-ov-file">Github</a> <a href="https://github.com/Qtechinnovation/NotesMafia/blob/main/LICENSE">License</a></p>
